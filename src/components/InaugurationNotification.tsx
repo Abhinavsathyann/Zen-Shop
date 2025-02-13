@@ -90,7 +90,6 @@ const InaugurationNotification = () => {
                   <div className="space-y-4 text-gray-600">
                     <p className="text-xl font-semibold">Join us on February 17, 2025</p>
                     <p className="text-lg">Time: 4:00 PM</p>
-                    <p className="text-sm">Be among the first to explore our exclusive collection</p>
                   </div>
                   <img src={posterImage} alt="Inauguration Poster" className="w-full h-64 object-cover mb-4" />
                   <button
