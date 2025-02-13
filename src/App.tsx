@@ -148,11 +148,6 @@ function App() {
           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1024px-WhatsApp.svg.png" alt="WhatsApp" className="w-6 h-6" />
           <a href="https://chat.whatsapp.com/LbGdwvwygzZ4MhzWBfk4Ti" target="_blank" rel="noopener noreferrer" className="text-lg">Join our WhatsApp group</a>
         </div>
-        <div className="flex items-center space-x-4">
-          <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
-            <a href="https://chat.whatsapp.com/LbGdwvwygzZ4MhzWBfk4Ti" target="_blank" rel="noopener noreferrer" className="text-lg">Join our WhatsApp group</a>
-          </button>
-        </div>
       </div>
       <div className="h-[400px] bg-gray-200">
         <iframe
