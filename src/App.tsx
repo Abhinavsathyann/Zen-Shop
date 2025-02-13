@@ -126,7 +126,7 @@ function App() {
             <div className="space-y-6">
               <div className="flex items-center space-x-4">
                 <MapPin className="w-6 h-6 text-gray-600" />
-                <p className="text-lg">123 Fashion Street, Style City, SC 12345</p>
+                <p className="text-lg">Elayoor,Malappuram</p>
               </div>
               <div className="flex items-center space-x-4">
                 <Phone className="w-6 h-6 text-gray-600" />
