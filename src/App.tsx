@@ -115,7 +115,6 @@ function App() {
         </div>
       </motion.section>
 
-     
       <motion.section 
   id="contact"
   className="py-20 px-4"
@@ -125,7 +124,7 @@ function App() {
 >
   <div className="max-w-6xl mx-auto">
     <h2 className="text-4xl font-serif text-center mb-16">Visit Us</h2>
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+    <div className="grid grid-cols-1 md:grid-cols-3 md:gap-12 gap-6">
       <div className="flex items-center space-x-4">
         <MapPin className="w-6 h-6 text-gray-600" />
         <p className="text-lg">Elayoor, Malappuram</p>
