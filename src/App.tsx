@@ -112,7 +112,7 @@ function App() {
         </div>
       </motion.section>
 
-      /* Contact Section */
+     
 <motion.section 
   id="contact"
   className="py-20 px-4"
