@@ -94,18 +94,21 @@ function App() {
             <DressCategory 
               title="Evening Wear"
               image="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&q=80"
+              description="Glam outfits for fancy nights"
             />
             <DressCategory 
               title="Casual Dresses"
               image="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&q=80"
+              description=" Comfy looks for everyday fun."
             />
             <DressCategory 
               title="Wedding Collection"
-              image="https://images.unsplash.com/photo-1594552072238-48c869e4c470?auto=format&fit=crop&q=80"
+              image="https://th.bing.com/th/id/OIP.pQ6gEjLGuPdhX8nsdNUL7gAAAA?rs=1&pid=ImgDetMain"
+              description="Elegant styles for special days."
             />
             <DressCategory 
               title="Girls Collection"
-              image="https://images.unsplash.com/photo-1602407294553-6ac9170c3cad?auto=format&fit=crop&q=80"
+              image="https://m.media-amazon.com/images/I/61Vrcg5tHhL._SX679_.jpg"
               description="Adorable dresses for little fashionistas"
             />
           </div>
@@ -122,44 +125,42 @@ function App() {
 >
   <div className="max-w-6xl mx-auto">
     <h2 className="text-4xl font-serif text-center mb-16">Visit Us</h2>
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-      <div className="space-y-6">
-        <div className="flex items-center space-x-4">
-          <MapPin className="w-6 h-6 text-gray-600" />
-          <p className="text-lg">Elayoor, Malappuram</p>
-        </div>
-        <div className="flex items-center space-x-4 cursor-pointer" onClick={() => window.open('tel:+917736725917', '_self')}>
-          <Phone className="w-6 h-6 text-gray-600" />
-          <p className="text-lg">+91 77367 25917</p>
-        </div>
-        <div className="flex items-center space-x-4 cursor-pointer" onClick={() => window.open('tel:+918606141624', '_self')}>
-          <Phone className="w-6 h-6 text-gray-600" />
-          <p className="text-lg">+91 86061 41624</p>
-        </div>
-        <div className="flex items-center space-x-4">
-          <Clock className="w-6 h-6 text-gray-600" />
-          <p className="text-lg">Mon-Sun: 9AM-8PM</p>
-        </div>
-        <div className="flex items-center space-x-4 cursor-pointer" onClick={() => window.open('https://www.instagram.com/_zen__shop_/', '_blank')}>
-          <Instagram className="w-6 h-6 text-gray-600" />
-          <p className="text-lg">@_zen__shop_</p>
-        </div>
-        <div className="flex items-center space-x-4">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1024px-WhatsApp.svg.png" alt="WhatsApp" className="w-6 h-6" />
-          <a href="https://chat.whatsapp.com/LbGdwvwygzZ4MhzWBfk4Ti" target="_blank" rel="noopener noreferrer" className="text-lg">Join our WhatsApp group</a>
-        </div>
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+      <div className="flex items-center space-x-4">
+        <MapPin className="w-6 h-6 text-gray-600" />
+        <p className="text-lg">Elayoor, Malappuram</p>
       </div>
-      <div className="h-[400px] bg-gray-200">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!4v1739436411989!6m8!1m7!1sVNQB61F1rVmYLSE8kQBHHQ!2m2!1d11.17982950399063!2d76.0667280827505!3f181.31076101317956!4f-4.160268729722716!5f0.7820865974627469"
-          width="100%"
-          height="400"
-          style={{ border: 0 }}
-          allowFullScreen={true}
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-        ></iframe>
+      <div className="flex items-center space-x-4 cursor-pointer" onClick={() => window.open('tel:+917736725917', '_self')}>
+        <Phone className="w-6 h-6 text-gray-600" />
+        <p className="text-lg">+91 77367 25917</p>
       </div>
+      <div className="flex items-center space-x-4 cursor-pointer" onClick={() => window.open('tel:+918606141624', '_self')}>
+        <Phone className="w-6 h-6 text-gray-600" />
+        <p className="text-lg">+91 86061 41624</p>
+      </div>
+      <div className="flex items-center space-x-4">
+        <Clock className="w-6 h-6 text-gray-600" />
+        <p className="text-lg">Mon-Sun: 9AM-8PM</p>
+      </div>
+      <div className="flex items-center space-x-4 cursor-pointer" onClick={() => window.open('https://www.instagram.com/_zen__shop_/', '_blank')}>
+        <Instagram className="w-6 h-6 text-gray-600" />
+        <p className="text-lg">@_zen__shop_</p>
+      </div>
+      <div className="flex items-center space-x-4">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1024px-WhatsApp.svg.png" alt="WhatsApp" className="w-6 h-6" />
+        <a href="https://chat.whatsapp.com/LbGdwvwygzZ4MhzWBfk4Ti" target="_blank" rel="noopener noreferrer" className="text-lg">Join our WhatsApp group</a>
+      </div>
+    </div>
+    <div className="h-[400px] bg-gray-200 mt-12">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!4v1739436411989!6m8!1m7!1sVNQB61F1rVmYLSE8kQBHHQ!2m2!1d11.17982950399063!2d76.0667280827505!3f181.31076101317956!4f-4.160268729722716!5f0.7820865974627469"
+        width="100%"
+        height="400"
+        style={{ border: 0 }}
+        allowFullScreen={true}
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      ></iframe>
     </div>
   </div>
 </motion.section>
