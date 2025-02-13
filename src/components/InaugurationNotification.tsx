@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { PartyPopper, X } from 'lucide-react';
+import posterImage from '../assets/Photos/Poster.png'; // Import the image file
 
 const InaugurationNotification = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -91,6 +92,7 @@ const InaugurationNotification = () => {
                     <p className="text-lg">Time: 4:00 PM</p>
                     <p className="text-sm">Be among the first to explore our exclusive collection</p>
                   </div>
+                  <img src={posterImage} alt="Inauguration Poster" className="w-full h-64 object-cover mb-4" />
                   <button
                     onClick={handleMinimize}
                     className="mt-8 bg-gradient-to-r from-pink-500 to-purple-500 text-white px-6 py-3 rounded-full hover:opacity-90 transition-opacity"
