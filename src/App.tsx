@@ -113,7 +113,7 @@ function App() {
       </motion.section>
 
      
-<motion.section 
+      <motion.section 
   id="contact"
   className="py-20 px-4"
   initial={{ opacity: 0 }}
@@ -128,12 +128,13 @@ function App() {
           <MapPin className="w-6 h-6 text-gray-600" />
           <p className="text-lg">Elayoor, Malappuram</p>
         </div>
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center space-x-4 cursor-pointer" onClick={() => window.open('tel:+917736725917', '_self')}>
           <Phone className="w-6 h-6 text-gray-600" />
-          <div>
-            <p className="text-lg">+91 77367 25917</p>
-            <p className="text-lg">+91 86061 41624</p>
-          </div>
+          <p className="text-lg">+91 77367 25917</p>
+        </div>
+        <div className="flex items-center space-x-4 cursor-pointer" onClick={() => window.open('tel:+918606141624', '_self')}>
+          <Phone className="w-6 h-6 text-gray-600" />
+          <p className="text-lg">+91 86061 41624</p>
         </div>
         <div className="flex items-center space-x-4">
           <Mail className="w-6 h-6 text-gray-600" />
@@ -143,9 +144,18 @@ function App() {
           <Clock className="w-6 h-6 text-gray-600" />
           <p className="text-lg">Mon-Sun: 9AM-8PM</p>
         </div>
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center space-x-4 cursor-pointer" onClick={() => window.open('https://www.instagram.com/_zen__shop_/', '_blank')}>
           <Instagram className="w-6 h-6 text-gray-600" />
           <p className="text-lg">@_zen__shop_</p>
+        </div>
+        <div className="flex items-center space-x-4">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1024px-WhatsApp.svg.png" alt="WhatsApp" className="w-6 h-6" />
+          <a href="https://chat.whatsapp.com/LbGdwvwygzZ4MhzWBfk4Ti" target="_blank" rel="noopener noreferrer" className="text-lg">Join our WhatsApp group</a>
+        </div>
+        <div className="flex items-center space-x-4">
+          <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+            <a href="https://chat.whatsapp.com/LbGdwvwygzZ4MhzWBfk4Ti" target="_blank" rel="noopener noreferrer" className="text-lg">Join our WhatsApp group</a>
+          </button>
         </div>
       </div>
       <div className="h-[400px] bg-gray-200">
