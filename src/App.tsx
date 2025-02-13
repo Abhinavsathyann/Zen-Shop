@@ -137,10 +137,6 @@ function App() {
           <p className="text-lg">+91 86061 41624</p>
         </div>
         <div className="flex items-center space-x-4">
-          <Mail className="w-6 h-6 text-gray-600" />
-          <p className="text-lg">contact@zenshop.com</p>
-        </div>
-        <div className="flex items-center space-x-4">
           <Clock className="w-6 h-6 text-gray-600" />
           <p className="text-lg">Mon-Sun: 9AM-8PM</p>
         </div>
