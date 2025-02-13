@@ -161,7 +161,7 @@ function App() {
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-8">
         <div className="max-w-6xl mx-auto px-4 text-center">
-          <p>© 2024 Zen Shop. All rights reserved.</p>
+          <p>© 2025 Zen Shop. All rights reserved.</p>
         </div>
       </footer>
     </div>
