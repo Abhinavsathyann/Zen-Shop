@@ -5,9 +5,9 @@ import Navbar from './components/Navbar';
 import DressCategory from './components/DressCategory';
 import InaugurationNotification from './components/InaugurationNotification';
 import OfferSection from './components/OfferSection';
-import pants from '../../../pants.png';
-import shorts from '../../../shorts.png';
-import tshirt from '../../../tshirt.png';
+import pants from '../src/assets/Photos/pants.png';
+import shorts from '../src/assets/Photos/shorts.png';
+import tshirt from '../src/assets/Photos/tshirt.png';
 
 
 
