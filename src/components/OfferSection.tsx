@@ -21,7 +21,7 @@ const OfferSection: React.FC<OfferSectionProps> = ({ title, images, descriptions
           {images.map((image, index) => (
             <motion.div
               key={index}
-              className="relative group cursor-pointer overflow-hidden rounded-lg"
+              className="relative group cursor-pointer rounded-xl"
               whileHover={{ scale: 1.02 }}
               transition={{ duration: 0.3 }}
             >
@@ -29,12 +29,8 @@ const OfferSection: React.FC<OfferSectionProps> = ({ title, images, descriptions
                 <img
                   src={image}
                   alt={`Offer Image ${index + 1}`}
-                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                  className="w-full h-full object-cover rounded-xl transition-transform duration-500 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-black bg-opacity-40 transition-opacity duration-300 group-hover:bg-opacity-50" />
-                <div className="absolute inset-0 flex flex-col items-center justify-center p-4 text-center">
-                  <h3 className="text-2xl font-serif text-white mb-2">{descriptions[index]}</h3>
-                </div>
               </div>
             </motion.div>
           ))}
