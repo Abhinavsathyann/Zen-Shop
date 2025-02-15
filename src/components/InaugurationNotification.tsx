@@ -84,14 +84,17 @@ const InaugurationNotification = () => {
                     <X className="w-5 h-5" />
                   </button>
                 </div>
-                <div className="text-center">
+                <div className="text-center  ">
                   <PartyPopper className="w-12 h-12 text-pink-500 mx-auto mb-4 animate-bounce" />
                   <h2 className="text-3xl font-serif text-gray-900 mb-4">Grand Inauguration!</h2>
                   <div className="space-y-4 text-gray-600">
                     <p className="text-xl font-semibold">Join us on February 17, 2025</p>
                     <p className="text-lg">Time: 4:00 PM</p>
                   </div>
-                  <img src={posterImage} alt="Inauguration Poster" className="w-full h-64 object-cover mb-4" />
+                  {/* <div className='overflow-y-scroll mt-4'> */}
+                    
+                  <img src={posterImage} alt="Inauguration Poster" className="w-full max-h-72 sm:max-h-64 object-contain mb-4" />
+                  {/* </div> */}
                   <button
                     onClick={handleMinimize}
                     className="mt-8 bg-gradient-to-r from-pink-500 to-purple-500 text-white px-6 py-3 rounded-full hover:opacity-90 transition-opacity"
