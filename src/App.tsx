@@ -4,6 +4,12 @@ import { MapPin, Phone, Mail, Clock, Instagram, Sparkles } from 'lucide-react';
 import Navbar from './components/Navbar';
 import DressCategory from './components/DressCategory';
 import InaugurationNotification from './components/InaugurationNotification';
+import OfferSection from './components/OfferSection';
+import pants from '../../../pants.png';
+import shorts from '../../../shorts.png';
+import tshirt from '../../../tshirt.png';
+
+
 
 function App() {
   const fadeIn = {
@@ -115,60 +121,72 @@ function App() {
         </div>
       </motion.section>
 
-      <motion.section 
-  id="contact"
-  className="py-20 px-4"
-  initial={{ opacity: 0 }}
-  whileInView={{ opacity: 1 }}
-  transition={{ duration: 0.8 }}
->
-  <div className="max-w-6xl mx-auto">
-    <h2 className="text-4xl font-serif text-center mb-16">Visit Us</h2>
-    <div className="grid grid-cols-1 md:grid-cols-3 md:gap-12 gap-6">
-      <div className="flex items-center space-x-4">
-        <MapPin className="w-6 h-6 text-gray-600" />
-        <p className="text-lg">Elayoor, Malappuram</p>
-      </div>
-      <div className="flex items-center space-x-4 cursor-pointer" onClick={() => window.open('tel:+917736725917', '_self')}>
-        <Phone className="w-6 h-6 text-gray-600" />
-        <p className="text-lg">+91 77367 25917</p>
-      </div>
-      <div className="flex items-center space-x-4 cursor-pointer" onClick={() => window.open('tel:+918606141624', '_self')}>
-        <Phone className="w-6 h-6 text-gray-600" />
-        <p className="text-lg">+91 86061 41624</p>
-      </div>
-      <div className="flex items-center space-x-4">
-        <Clock className="w-6 h-6 text-gray-600" />
-        <p className="text-lg">Mon-Sun: 9AM-8PM</p>
-      </div>
-      <div className="flex items-center space-x-4 cursor-pointer" onClick={() => window.open('https://www.instagram.com/_zen__shop_/', '_blank')}>
-        <Instagram className="w-6 h-6 text-gray-600" />
-        <p className="text-lg">@_zen__shop_</p>
-      </div>
-      <div className="flex items-center space-x-4">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1024px-WhatsApp.svg.png" alt="WhatsApp" className="w-6 h-6" />
-        <a href="https://chat.whatsapp.com/LbGdwvwygzZ4MhzWBfk4Ti" target="_blank" rel="noopener noreferrer" className="text-lg">Join our WhatsApp group</a>
-      </div>
-    </div>
-    <div className="h-[400px] bg-gray-200 mt-12">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!4v1739436411989!6m8!1m7!1sVNQB61F1rVmYLSE8kQBHHQ!2m2!1d11.17982950399063!2d76.0667280827505!3f181.31076101317956!4f-4.160268729722716!5f0.7820865974627469"
-        width="100%"
-        height="400"
-        style={{ border: 0 }}
-        allowFullScreen={true}
-        loading="lazy"
-        referrerPolicy="no-referrer-when-downgrade"
-      ></iframe>
-    </div>
-  </div>
-</motion.section>
+      <OfferSection 
+        title="Exclusive Offers"
+        images={[
+          pants,
+          shorts,
+          tshirt,
+        ]}
+        descriptions={[
+        
+        ]}
+      />
 
+      {/* Contact Section */}
+      <motion.section 
+        id="contact"
+        className="py-20 px-4"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+      >
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-serif text-center mb-16">Visit Us</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 md:gap-12 gap-6">
+            <div className="flex items-center space-x-4">
+              <MapPin className="w-6 h-6 text-gray-600" />
+              <p className="text-lg">Elayoor, Malappuram</p>
+            </div>
+            <div className="flex items-center space-x-4 cursor-pointer" onClick={() => window.open('tel:+917736725917', '_self')}>
+              <Phone className="w-6 h-6 text-gray-600" />
+              <p className="text-lg">+91 77367 25917</p>
+            </div>
+            <div className="flex items-center space-x-4 cursor-pointer" onClick={() => window.open('tel:+918606141624', '_self')}>
+              <Phone className="w-6 h-6 text-gray-600" />
+              <p className="text-lg">+91 86061 41624</p>
+            </div>
+            <div className="flex items-center space-x-4">
+              <Clock className="w-6 h-6 text-gray-600" />
+              <p className="text-lg">Mon-Sun: 9AM-8PM</p>
+            </div>
+            <div className="flex items-center space-x-4 cursor-pointer" onClick={() => window.open('https://www.instagram.com/_zen__shop_/', '_blank')}>
+              <Instagram className="w-6 h-6 text-gray-600" />
+              <p className="text-lg">@_zen__shop_</p>
+            </div>
+            <div className="flex items-center space-x-4">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1024px-WhatsApp.svg.png" alt="WhatsApp" className="w-6 h-6" />
+              <a href="https://chat.whatsapp.com/LbGdwvwygzZ4MhzWBfk4Ti" target="_blank" rel="noopener noreferrer" className="text-lg">Join our WhatsApp group</a>
+            </div>
+          </div>
+          <div className="h-[400px] bg-gray-200 mt-12">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!4v1739436411989!6m8!1m7!1sVNQB61F1rVmYLSE8kQBHHQ!2m2!1d11.17982950399063!2d76.0667280827505!3f181.31076101317956!4f-4.160268729722716!5f0.7820865974627469"
+              width="100%"
+              height="400"
+              style={{ border: 0 }}
+              allowFullScreen={true}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </motion.section>
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-8">
         <div className="max-w-6xl mx-auto px-4 text-center">
-          <p>© 2025 Zen Shop. All rights reserved.</p>
+          <p> 2025 Zen Shop. All rights reserved.</p>
         </div>
       </footer>
     </div>
@@ -176,12 +194,3 @@ function App() {
 }
 
 export default App;
-
-
-
-
-
-
-
-
-
