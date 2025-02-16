@@ -146,7 +146,7 @@ function App() {
           <div className="grid grid-cols-1 md:grid-cols-3 md:gap-12 gap-6">
             <div className="flex items-center space-x-4">
               <MapPin className="w-6 h-6 text-gray-600" />
-              <p className="text-lg">Elayoor, Malappuram</p>
+              <p className="text-lg">Elayur, Malappuram</p>
             </div>
             <div className="flex items-center space-x-4 cursor-pointer" onClick={() => window.open('tel:+917736725917', '_self')}>
               <Phone className="w-6 h-6 text-gray-600" />
